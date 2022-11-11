@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+version: '${1:3}'
+
+services:
+
+  ${2:service (dc:s)}
+
+${3:network (dc:n)}
+]]></content>
+    <tabTrigger>dc</tabTrigger>
+    <description>Docker-compose skeleton</description>
+</snippet>

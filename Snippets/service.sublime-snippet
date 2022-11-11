@@ -1,0 +1,35 @@
+<snippet>
+    <content><![CDATA[
+  ${1:service}:${2: &${1}}
+    ${3:<<: *${4:extended_image}}
+    container_name: ${5:\${APP_PROJECT\}-${1}}
+    ${6:hostname: ${5}}
+    image: ${7:${1}}:${8:latest}
+    ${9:build:
+      context: ${10:.}
+      dockerfile: ${11:.docker/Dockerfile}}
+    ${12:env_file:
+      - .env}
+    ${13:environment:
+      ${14:NAME}: ${15:value}}
+    ${16:volumes:
+      - ${17:volume_or_path}:${18:/remote/path}}
+    ${19:ports:
+      - ${20:123}:${21:456}}
+    ${22:user: "${23:\${UID:-1000\}:\${GID:-1000\}}"}
+    ${24:working_dir: ${25:/path/to/dir/}}
+    ${26:command: ${27:--color=auto}}
+    ${28:entrypoint: [${29:'ls', 'la'}]}
+    ${30:restart: ${31:unless-stopped}}
+    ${32:profiles:
+      - ${33:myprofile}}
+    ${34:depends_on:
+      - ${35:other_image}}
+    ${36:labels:
+      - "traefik.http.routers.${5}.rule=Host(`${37:\${APP_URL\}}`)"
+      - "traefik.http.services.${5}-service.loadbalancer.server.port=${38:456}"}
+]]></content>
+    <tabTrigger>dc:s</tabTrigger>
+    <scope>source.yaml</scope>
+    <description>Docker-compose service</description>
+</snippet>

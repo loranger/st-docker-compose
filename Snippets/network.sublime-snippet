@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+networks:
+  default:
+    name: ${1:web}
+]]></content>
+    <tabTrigger>dc:n</tabTrigger>
+    <scope>source.yaml</scope>
+    <description>Docker-compose network</description>
+</snippet>
