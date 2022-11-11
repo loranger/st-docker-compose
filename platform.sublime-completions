@@ -1,0 +1,36 @@
+{
+	"scope": "source.yaml.docker",
+	"completions":
+	[
+		{
+			"trigger": "platform",
+			"annotation": "osx",
+			"contents": "platform: osx"
+		},
+		{
+			"trigger": "platform",
+			"annotation": "windows",
+			"contents": "platform: windows"
+		},
+		{
+			"trigger": "platform",
+			"annotation": "linux amd64",
+			"contents": "platform: linux/amd64"
+		},
+		{
+			"trigger": "platform",
+			"annotation": "linux arm64",
+			"contents": "platform: linux/arm64"
+		},
+		{
+			"trigger": "platform",
+			"annotation": "linux arm v6",
+			"contents": "platform: linux/arm/v6"
+		},
+		{
+			"trigger": "platform",
+			"annotation": "linux arm v7",
+			"contents": "platform: linux/arm/v7"
+		},
+	]
+}

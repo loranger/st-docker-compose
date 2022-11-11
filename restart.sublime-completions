@@ -1,0 +1,26 @@
+{
+	"scope": "source.yaml.docker",
+	"completions":
+	[
+		{
+			"trigger": "restart",
+			"annotation": "no",
+			"contents": "restart: \"no\""
+		},
+		{
+			"trigger": "restart",
+			"annotation": "always",
+			"contents": "restart: always"
+		},
+		{
+			"trigger": "restart",
+			"annotation": "on-failure",
+			"contents": "restart: on-failure"
+		},
+		{
+			"trigger": "restart",
+			"annotation": "unless-stopped",
+			"contents": "restart: unless-stopped"
+		},
+	]
+}
