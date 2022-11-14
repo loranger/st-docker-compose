@@ -9,3 +9,5 @@
 # Installation
 
 Clone this repository inside your [`User` settings folder](https://docs.sublimetext.io/guide/getting-started/basic-concepts.html#the-data-directory)
+
+**Note** : PR are welcome 😉
